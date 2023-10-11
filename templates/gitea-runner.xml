@@ -8,7 +8,7 @@
   <Support/>
   <Project>https://gitea.com/gitea/act_runner</Project>
   <Overview>A runner for Gitea based on act.</Overview>
-  <Category>Backup: Cloud: Productivity: Tools:</Category>
+  <Category>Cloud: Productivity: Tools:</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://avatars.githubusercontent.com/u/54465427?v=4</Icon>
