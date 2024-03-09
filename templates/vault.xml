@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Vault</Name>
+  <Repository>hashicorp/vault</Repository>
+  <Registry>https://hub.docker.com/r/hashicorp/vault</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.hashicorp.com/products/vault</Project>
+  <Overview>Manage access to secrets and protect sensitive data with identity-based security.&#xD;
+&#xD;
+config.hcl:&#xD;
+ui = "true"&#xD;
+listener "tcp" {&#xD;
+  address     = "0.0.0.0:8200"&#xD;
+  tls_disable = "true"&#xD;
+}&#xD;
+storage "file" {&#xD;
+  path = "/vault/file"&#xD;
+}&#xD;
+api_addr = "http://0.0.0.0:8200"&#xD;
+disable_mlock = "true"</Overview>
+  <Category>Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8200]</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.gravatar.com/avatar/f7304a610df968cef5badc9e9dcd40e0?s=120&amp;amp;r=g&amp;amp;d=404</Icon>
+  <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
+  <PostArgs>server</PostArgs>
+  <DateInstalled>1709990567</DateInstalled>
+  <Config Name="data" Target="/vault/file/" Default="/mnt/user/appdata/vault/data/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vault/data/</Config>
+  <Config Name="config" Target="/vault/config/config.hcl" Default="/mnt/user/appdata/vault/config.hcl" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vault/config.hcl</Config>
+  <Config Name="ui" Target="8200" Default="8200" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8200</Config>
+  <Config Name=" VAULT_ADDR" Target=" VAULT_ADDR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://vault.mars.local</Config>
+</Container>
