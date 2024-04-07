@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>teleinfo_exporter</Name>
+  <Repository>git.d3vyce.fr/d3vyce/teleinfo_exporter:latest</Repository>
+  <Registry/>
+  <Network>proxynet</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/d3vyce/teleinfo-exporter<Project/>
+  <Overview>Simple prometheus exporter for Linky teleinfo<Overview/>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/d3vyce/unraid-template/main/icon/teleinfo_exporter.png</Icon>
+  <ExtraParams/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="MQTT Host" Target="BROKER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT Port" Target="BROKER_PORT" Default="1883" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">1883</Config>
+  <Config Name="MQTT User" Target="BROKER_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MQTT Password" Target="BROKER_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Broker Topic" Target="BROKER_TOPIC" Default="teleinfo/tele/SENSOR" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">teleinfo/tele/SENSOR</Config>
+</Container>
