@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>web-check</Name>
+  <Repository>lissy93/web-check</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Lissy93/web-check</Project>
+  <Overview>Comprehensive, on-demand open source intelligence for any website</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://camo.githubusercontent.com/def1f3032b6ec59d11b109c906eb7a512796acbf46da8a7e53a3f1fa19fdcade/68747470733a2f2f692e6962622e636f2f7131675a4e32702f7765622d636865636b2d6c6f676f2e706e67</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <Config Name="webui" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+</Container>
