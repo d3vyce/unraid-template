@@ -26,7 +26,6 @@ disable_mlock = "true"</Overview>
   <Icon>https://www.gravatar.com/avatar/f7304a610df968cef5badc9e9dcd40e0?s=120&amp;amp;r=g&amp;amp;d=404</Icon>
   <ExtraParams>--cap-add=IPC_LOCK</ExtraParams>
   <PostArgs>server</PostArgs>
-  <DateInstalled>1709990567</DateInstalled>
   <Config Name="data" Target="/vault/file/" Default="/mnt/user/appdata/vault/data/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vault/data/</Config>
   <Config Name="config" Target="/vault/config/config.hcl" Default="/mnt/user/appdata/vault/config.hcl" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vault/config.hcl</Config>
   <Config Name="ui" Target="8200" Default="8200" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8200</Config>
