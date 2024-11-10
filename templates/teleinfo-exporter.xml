@@ -7,8 +7,8 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project>https://github.com/d3vyce/teleinfo-exporter<Project/>
-  <Overview>Simple prometheus exporter for Linky teleinfo<Overview/>
+  <Project>https://github.com/d3vyce/teleinfo-exporter</Project>
+  <Overview>Simple prometheus exporter for Linky teleinfo</Overview>
   <Category>HomeAutomation: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL/>
